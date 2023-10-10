@@ -97,7 +97,7 @@ int maxValueFromStartFast(Artifact* allArts, int numArts, int weightAllow) {
     //          it is about to go out of scope when we return from this fuction, 
     //          so, free up ALL memory allocated for [memo] 
     for(int i = 0; i < numArts + 1; i++){
-            free(memo[i]it );
+            free(memo[i]);
     }
     free(memo);
     return res; 
